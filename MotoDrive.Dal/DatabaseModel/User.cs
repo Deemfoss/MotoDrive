@@ -10,18 +10,19 @@ namespace MotoDrive.Dal.DatabaseModel
     {
         [Key]
         public int Id { get; set; }
-        public string Name { get; set; }
+        public string Mail { get; set; }
         public string Password { get; set; }
-        [ForeignKey("Roles")]
-        public string RoleId { get; set; }
-        public Roles Roles { get; set; }
+        public string Name { get; set; }
+        public string Avatar { get; set; }
+
+        [ForeignKey("Model")]
+        public int ModelId { get; set; }
+
+        [ForeignKey("Role")]
+        public int RoleId { get; set; }
+        public Role Role { get; set; }
     }
 
-    public class Roles
-    {
-        [Key]
-        public int Id { get; set; }
-        public string Role { get; set; }
-    }
+  
 
 }

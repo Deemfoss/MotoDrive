@@ -12,4 +12,7 @@
   <ItemGroup>
     <Folder Include="wwwroot\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MotoDrive.Dal\MotoDrive.Dal.csproj" />
+  </ItemGroup>
 </Project>
