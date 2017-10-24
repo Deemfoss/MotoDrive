@@ -15,7 +15,7 @@ namespace MotoDrive.Web.Controllers
         }
 
         [HttpPost]
-        public IActionResult Registration()
+        public IActionResult Registration(string name)
         {
             return View();
         }
