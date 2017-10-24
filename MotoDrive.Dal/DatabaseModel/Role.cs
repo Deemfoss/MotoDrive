@@ -10,5 +10,6 @@ namespace MotoDrive.Dal.DatabaseModel
         [Key]
         public int Id { get; set; }
         public string Name { get; set; }
+        ICollection<User> Users { get; set; }
     }
 }
