@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 using System.ComponentModel.DataAnnotations;
-namespace MotoDrive.Dal.Models
-{
+
+namespace MotoDrive.Web.Models
+{ 
     public class RegisterModel
     {
         [Required(ErrorMessage ="Empty area")]
