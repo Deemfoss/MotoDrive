@@ -6,6 +6,24 @@
 
 <h2>Registration</h2>
 
-<form asp-a>
-
+<form asp-action="Registration" asp-controller="Authorisation" asp-antiforgery="true">
+    <div class="validation" asp-validation-summary="ModelOnly"></div>
+    <div>
+        <div>
+            <label asp-for="Email"> Input email adress</label><br/>
+            <input type="text" asp-for="Email" />
+            <span asp-validation-for="Email"></span>
+        </div>
+        <div>
+            <label asp-for="Password"> Input Password</label><br />
+            <input type="text" asp-for="Password" />
+            <span asp-validation-for="Password"></span>
+        </div>
+        <div>
+            <label asp-for="ConfirmPassword"> Input Password</label><br />
+            <input type="text" asp-for="Password" />
+            <span asp-validation-for="Password"></span>
+        </div>
+        <input type="submit" value="Complete Registration" />
+    </div>
 </form>
