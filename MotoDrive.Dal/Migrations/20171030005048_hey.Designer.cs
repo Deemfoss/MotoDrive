@@ -11,8 +11,8 @@ using System;
 namespace MotoDrive.Dal.Migrations
 {
     [DbContext(typeof(MotoDriveContext))]
-    [Migration("20171023002001_initial")]
-    partial class initial
+    [Migration("20171030005048_hey")]
+    partial class hey
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

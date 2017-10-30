@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace MotoDrive.Dal.Migrations
 {
-    public partial class initial : Migration
+    public partial class hey : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

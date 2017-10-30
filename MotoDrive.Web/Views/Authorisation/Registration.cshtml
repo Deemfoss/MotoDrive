@@ -1,4 +1,4 @@
-﻿@model MotoDrive.Web.Models.RegisterModel;
+﻿@model MotoDrive.Web.Models.Authorisation.RegistrationModel;
 
 @{
     ViewData["Title"] = "Registration";
@@ -21,7 +21,7 @@
         </div>
         <div>
             <label asp-for="ConfirmPassword"> Input Password</label><br />
-            <input type="text" asp-for="Password" />
+            <input type="text" asp-for="ConfirmPassword" />
             <span asp-validation-for="Password"></span>
         </div>
         <input type="submit" value="Complete Registration" />

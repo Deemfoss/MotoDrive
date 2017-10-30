@@ -32,8 +32,8 @@ namespace MotoDrive.Web
 
         public void Configure(IApplicationBuilder app)
         {
-            app.UseStaticFiles();
             app.UseAuthentication();
+            app.UseStaticFiles();
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
